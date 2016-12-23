@@ -4,7 +4,7 @@ Description=Hugo Server
 [Service]
 User=hugo
 Type=forking
-ExecStart=/var/hugo/start.sh
+ExecStart=/home/hugo/hugo-config/start.sh
 
 [Install]
 WantedBy=multi-user.target
