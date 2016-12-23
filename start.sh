@@ -9,6 +9,7 @@ for BLOG in $( ls $HUGO_HOME | grep '.blog$' ); do
         --theme="$THEME" \
         --port="$PORT" \
         --baseUrl="$BASEURL" \
+        --bind="0.0.0.0" \
         --buildDrafts="$BUILDDRAFTS" \
         --watch=true --appendPort=false --source=$HUGO_HOME/$BLOG &
 done;
