@@ -5,6 +5,10 @@ Description=Hugo Server
 User=hugo
 Type=forking
 ExecStart=/home/hugo/hugo-config/start.sh
+ExecStop=/home/hugo/hugo-config/stop.sh
+TimeOutSec=30
+Restart=on-failure
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
